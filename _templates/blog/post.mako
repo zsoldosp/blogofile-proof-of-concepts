@@ -17,8 +17,8 @@
       <h2 class="blog_post_title"><a href="${post.permapath()}" rel="bookmark" title="Permanent Link to ${post.title}">${post.title}</a></h2>
       <p><small><span class="blog_post_date">${post.date.strftime("%B %d, %Y at %I:%M %p")}</span> | categories: 
         <span class="blog_post_categories">${", ".join(category_links)}</span>
-        % if bf.config.blog.disqus.enabled:
-        | <a href="${post.permalink}#disqus_thread">View Comments</a>
+        % if bf.config.blog.comments.enabled:
+        | <%include file="blog/comments/link_to_comment_section_in_page.mako" args="post=post, link_text='Read and Post Comments'" />
         % endif
       </small></p>
     </header>
