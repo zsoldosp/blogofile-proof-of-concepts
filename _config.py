@@ -70,6 +70,7 @@ filters.markdown.extensions.fenced_code.enabled = True
 filters.markdown.extensions.headerid.enabled = True
 filters.markdown.extensions.tables.enabled = True
 
-blog.comments.type = 'disqus'
-blog.comments.enabled = 'disqus'
-blog.disqus.enabled = True
+blog.comments.type = 'email-based-manual'
+blog.comments.enabled = True
+blog.comments.email = 'me@thisblog.com'
+
