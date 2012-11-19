@@ -1,8 +1,10 @@
 <%inherit file="bf_base_template" />
 % for post in posts:
   <%include file="post.mako" args="post=post" />
-% if bf.config.blog.disqus.enabled:
-  <div class="after_post"><a href="${post.permalink}#disqus_thread">Read and Post Comments</a></div>
+% if bf.config.blog.comments.enabled:
+  <div class="after_post">
+    <%include file="blog/comments/link_to_comment_section_in_page.mako" args="post=post, link_text='Read and Post Comments'" />
+  </div>
 % endif
   <hr class="interblog" />
 % endfor
