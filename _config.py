@@ -69,3 +69,6 @@ filters.markdown.extensions.footnotes.enabled = True
 filters.markdown.extensions.fenced_code.enabled = True
 filters.markdown.extensions.headerid.enabled = True
 filters.markdown.extensions.tables.enabled = True
+
+blog.comments_type = 'disqus'
+blog.disqus.enabled = True
