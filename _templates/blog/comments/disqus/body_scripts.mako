@@ -1,4 +1,4 @@
-  % if bf.config.blog.disqus.enabled:
+  % if bf.config.blog.comments.enabled:
   <script>
   (function() {
       var links = document.getElementsByTagName('a');
